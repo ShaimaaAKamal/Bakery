@@ -1,0 +1,398 @@
+
+.simplePost-Banner,.GalleryPost-Banner{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    background-color: #F8F8F8;
+}
+
+.simplePost-Banner div,.GalleryPost-Banner div{
+    padding-top:4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simplePost-Banner div h2,.GalleryPost-Banner div h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color:var(--headColor)
+}
+
+.simplePost-Banner div p,.GalleryPost-Banner div p{
+    padding:1rem;
+    font-weight: 400;
+    font-size:.95rem;
+    color:#AFAFAF;
+}
+
+.simplePost-Banner div p span,.GalleryPost-Banner div p span {
+    color:var(--paragColor);
+}
+.simplePost-Banner div p a,.GalleryPost-Banner div p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ .simplePost-Caption,.GalleryPost-Caption{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.simplePost-Caption .container,.GalleryPost-Caption .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.simplePost-Caption .container .content,.GalleryPost-Caption .container .content{
+    padding:2rem 0;
+    border-bottom:1px solid #F0F0F0;
+}
+
+.simplePost-Caption p,.GalleryPost-Caption  p {
+    padding:1rem 0;
+    line-height: 1.95rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color:#7E7E7E;
+}
+
+
+
+.simplePost-Caption .container .content  img,.GalleryPost-Caption .container .content .galleryImages img {
+    width:100%;
+}
+
+ .container  .author,.container .next,.container .comment, .container .feedback{
+    display: flex;
+    padding:2rem 0;
+    border-bottom:1px solid #F0F0F0;
+}
+
+.GalleryPost-Caption .container .next{
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.container .feedback{
+    flex-direction: column;
+    border-bottom:none;
+    margin-bottom:1rem;
+}
+ .container  .author >div:first-of-type,.simplePost-Caption .comment-Image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+}
+.container  .author >div:last-of-type{
+    width:65%;
+    padding:0 1rem;
+}
+ .container  .author >div:last-of-type p {
+    padding:.5rem 0;
+}
+ .container  .author >div:last-of-type h2{
+    font-size:1rem;
+    font-weight: 400;
+}
+
+.simplePost-Caption .comment-Image{
+    width:15%;
+    align-items: center;
+}
+ .container  .author img,.simplePost-Caption .comment-Image img{
+    width:100%;
+    border-radius: 50%;
+}
+
+.simplePost-Caption .container .next{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ .container .next a{
+    text-decoration: none;
+}
+
+.container .next p{
+    padding:0;
+}
+ .container .next p:first-of-type a{
+    font-size:.8rem;
+    color:#AAA;
+}
+ .container .next p:last-of-type a{
+    font-size:1rem;
+    color:#333;
+}
+ .container .next p:last-of-type a:hover,.container .next div a:hover{
+    color:var(--IconColor)
+}
+.simplePost-Caption .container .next div,.container .next >div div{
+    padding:0 .4rem;
+}
+.container .next div a {
+   color:#333;
+   font-size:1.5rem;
+}
+.container .next .nextPost, .container .next .previousPost {
+  display: flex;
+  align-items: center;
+}
+ .container .comment{
+    flex-direction: column;
+}
+
+ .container .comment h2 {
+    margin-bottom:1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.GalleryPost-Caption  .container .comment h2{
+    margin-bottom:0
+}
+
+.simplePost-Caption .comment-Info {
+    display: flex;
+    justify-content: space-between;
+}
+.simplePost-Caption .info{
+    display: flex;
+}
+.simplePost-Caption .info > div:last-of-type {
+    padding-left:.8rem
+}
+.simplePost-Caption .info > div:last-of-type div {
+    display: flex;
+    align-items: center;
+}
+.simplePost-Caption .info > div:last-of-type > p {
+    padding:0;
+    font-size: 1rem;
+}
+
+.simplePost-Caption .info > div:last-of-type div p {
+    font-size:.85rem;
+    color:#959496;
+} 
+.simplePost-Caption .info > div:last-of-type div h3 {
+    padding-right:1rem;
+} 
+
+.simplePost-Caption .comment-Info > div:last-of-type{
+    padding:1rem;
+    align-self: center;
+}
+.simplePost-Caption .comment-Info div:last-of-type button{
+    background-color: #F1F0F2;
+    padding:.5rem;
+    border:none;
+    border-radius: .5rem;
+}
+
+.simplePost-Caption .comment-Info div:last-of-type button:hover{
+    background-color: var(--IconColor);
+    color:#fff;
+}
+ .container .feedback div{
+    margin-bottom:1rem;
+}
+ .container .feedback >div:first-of-type textarea{
+    width:100%;
+    padding:1rem;
+    border:.5px solid #AAAAAA;
+}
+ .container .feedback .inputs{
+    display: flex;
+    flex-direction: column;
+}
+.container .feedback .inputs input{
+    margin-bottom:1rem;
+    width:100%;
+    padding:1rem;
+    border:.5px solid #AAAAAA;
+}
+.container .feedback >div:first-of-type textarea::placeholder,.container .feedback .inputs input::placeholder{
+    font-size:.9rem;
+    font-weight: 400;
+    color:#AAAAAA;
+}
+
+.container .feedback button{
+    padding:1rem;
+    background-color: var(--IconColor);
+    color:#fff;
+    border:none;
+    border-radius:.5rem;
+}
+
+ .container .feedback button:hover{
+    background-color: var(--headColor);
+}
+
+/* End of Simple Post */
+
+/* Start of Gallery Post */
+
+
+.GalleryPost-Caption .container .content .galleryImages {
+    display: flex;
+    position: relative;
+}
+
+.GalleryPost-Caption .container .content .galleryImages div {
+    position: absolute;
+    bottom:.5rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.GalleryPost-Caption .container .content .galleryImages div i {
+    font-size:.6rem;
+    color:#ddd;
+}
+
+.GalleryPost-Caption .container .content .galleryImages div i:first-of-type{
+    color:#fff;
+}
+
+.GalleryPost-Caption  .content blockquote {
+    padding:1rem 0 1rem 1.3rem;
+    margin-left:2rem;
+    line-height: 1.95rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color:#7E7E7E;
+    border-left:.2rem solid #ccc;
+}
+
+.GalleryPost-Caption  .content blockquote  i:first-of-type {
+    font-size:1.5rem;
+    padding:0 1rem 0 0;
+}
+
+.GalleryPost-Caption  .content blockquote  i:last-of-type {
+    font-size:1.5rem;
+    padding:0  0 0 1rem;
+}
+
+.GalleryPost-Caption  .content h4 {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.GalleryPost-Caption  .content p img {
+    padding:1rem 2rem 1rem 0;
+    float:left;
+}
+.clr{
+    clear:both;
+}
+/*End of Gallery Post */
+
+/* Basic Post */
+
+.container .content .buttons{
+    text-align: center;
+}
+
+.container .content .buttons button{
+   padding:.8rem 1rem;
+   background-color: #fff;
+   color:#333;
+   font-size:.6rem;
+   font-weight: 400;
+   border:.5px solid #AFAFAF;
+   border-radius: .2rem;
+}
+
+.container .content .buttons button:hover{
+    background-color: var(--IconColor);
+    color:#fff;
+    border-color: var(--IconColor);
+}
+
+/* Basic Post */
+
+/* Quote Post */
+
+.container .content .quotePosT {
+    display: flex;
+    flex-direction: column;
+    background-color:#8E7753 ;
+    font-weight: 400;
+}
+
+.container .content .quotePosT * {
+    color:#fff;
+}
+
+.container .content .quotePosT blockquote{
+    border:none;
+    padding:2rem 2rem 0 ;
+    margin:0;
+    font-size: 1.2rem;
+}
+.container .content .quotePosT div{
+    padding:0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .content .quotePosT i {
+    font-size:1.7rem;
+    color:#D2C9BB'
+}
+/* Quote Post */
+
+@media screen and (min-width:600px){
+
+}
+
+@media screen and (min-width:768px){
+   .container  .author >div:first-of-type{
+        width:15%;
+    }
+    .simplePost-Caption .comment-Image{
+        width:12%;
+    }
+     .container  .author >div:last-of-type{
+        width:80%;
+        padding:0 1rem;
+    }
+
+    .container .feedback .inputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+.container .feedback .inputs input{
+        margin-bottom:1rem;
+        width:49%;
+        padding:1rem;
+        border:.5px solid #AAAAAA;
+    }
+}
+
+@media screen and (min-width:992px){
+    
+}
+
+@media screen and (min-width:1200px){
+
+    .simplePost-Caption,.GalleryPost-Caption{
+        width:80%;
+        margin:auto;
+        padding:4rem;
+    }
+
+    .simplePost-Banner,.GalleryPost-Banner{
+        height: 42vh;
+    }
+}

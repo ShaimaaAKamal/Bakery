@@ -1,0 +1,1385 @@
+:root{
+    --headColor:#303030;
+    --paragColor:#606060;
+    --afterColor:#E3E3E3;
+    --BgColor:#F8F7F9;
+    --IconColor:#8F7756;
+    --StaticBgColor:#8C7753;
+
+}
+
+
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Alegreya', serif;
+}
+ 
+.container{
+    width:90%
+}
+/* Nav Section */
+
+header{
+    position: absolute;
+    width:100%;
+    padding:1rem 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div:first-of-type {
+    width:38%;
+}
+
+nav div:first-of-type img{
+    width: 100%;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav div i {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+nav ul {
+    display: none;
+}
+
+
+
+/* Nav Section */
+
+/*Home Banner*/
+.spacing{
+    padding:5rem 0 ;
+}
+
+.Home-Banner{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url("../Images/index/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-Banner .Banner-Info{
+    padding:1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+}
+
+.Home-Banner .Banner-Info h3{
+    font-weight: 400;
+    font-size:1.3rem
+}
+
+.Home-Banner .Banner-Info p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.Home-Banner .Banner-Info p:last-of-type{
+    padding:1rem 0;
+}
+.Home-Banner .Banner-Info h1{
+    padding:1rem 0;
+    font-weight: 400;
+    font-size: 2.1rem;
+}
+.Home-Banner .Banner-Info div {
+    margin-top:1rem;
+}
+.Home-Banner .Banner-Info a {
+    text-decoration: none;
+    padding:.8rem 1.2rem;
+    border-radius: .2rem;
+    color:#fff;
+    margin-right: 1rem;
+}
+
+.Home-Banner .Banner-Info a:first-of-type{
+    background-color: var(--IconColor);
+}
+
+.Home-Banner .Banner-Info a:last-of-type{
+    border:1px solid #fff;
+}
+
+/*Home Banner*/
+
+/* Home Who Section */
+ .Who,.Location,.Baking,.contactSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3rem 0 ;
+ }
+
+ .Who img,.Location img,.Baking img{
+    width:100%;
+ }
+ 
+
+ .h2-format{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:var(--headColor);
+    padding:1rem 0 ;
+ }
+ .Baking  .h2-format{
+    text-align: center;
+ }
+ .p-format{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    color:#686868;
+ }
+ .Baking  .p-format{
+    text-align: center;
+ }
+ 
+ .Who .container > div:last-of-type div:first-of-type{
+    margin-top:1rem;
+ }
+ .Who .container > div:last-of-type div{
+    display: flex;
+    align-items: center;
+    padding:.5rem 0;
+ }
+ .Who .container > div:last-of-type div i {
+    padding:.5rem;
+    color:var(--IconColor);
+    border:1px solid var(--IconColor);
+    border-radius: 50%;
+    margin-right:1rem;
+ }
+/* Home Who Section */
+/* Home Location Section */
+
+.Location,.contactSection{
+    background-color: #F8F8F8;
+}
+
+.Location div:first-of-type{
+    margin-bottom:1rem;
+}
+/* Home Location Section */
+
+/* Home Baking Section */
+
+.Desserts{
+    padding:3rem 0 ;
+}
+.Desserts .Dessert{
+    padding: 1rem 0;
+}
+
+/* Home Baking Section */
+
+/* Home Contact Section */
+.contactSection .container >div:last-of-type iframe{
+    width:100%;
+    padding:2rem 0;
+}
+
+.contactSection .container .contact-Information > p:last-of-type {
+    padding:1rem 0;
+}
+/* Home Contact Section */
+
+/* Bannner Section */
+
+.banner,.Offer-Banner,.Gallery-Banner{
+    height: 50vh;
+    background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("../Images/banner/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+.Offer-Banner{
+    background-position: center center;
+}
+
+.Gallery-Banner,.Blog-Banner {
+    background-image: none;
+    background-color: #F8F8F8;
+}
+
+.banner div,.Offer-Banner div,.Gallery-Banner div{
+    text-align: center;
+}
+
+.banner div h2 ,.Offer-Banner div h2,.Gallery-Banner div h2{
+    margin:2rem 0 1rem;
+    padding:2rem 0 0;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+
+.Gallery-Banner div h2,.Blog-Banner h2{ 
+    color:#000;
+}
+
+.Blog-Banner h2{
+    font-weight: 400;
+    padding:3rem 0 0.5rem;
+    font-size:1.75rem;
+}
+
+.Gallery-Banner div p,.Blog-Banner p{
+    color:#686868;
+}
+
+.banner div p ,.Offer-Banner div p,.Gallery-Banner div p,.Blog-Banner div p{
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+.Offer-Banner div p a ,.Blog-Banner div p a{
+    text-decoration: none;
+    color:#D3C9C2;
+}
+
+.Blog-Banner{
+    padding:1rem;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Bannner Section */
+
+/* aside Section */
+
+aside{
+    z-index:500;
+    background-color: #fff;
+    color:#666;
+    width:45px;
+    height:90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 10px 2px var(--paragColor);
+    border-radius: .3rem 0 0 .3rem ;
+    position: fixed;
+    right:0;
+    top:27%;
+}
+
+aside i {
+    font-size: 1.2rem;
+}
+
+/* aside Section */
+
+/* Story Section */
+ .story {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .story .container div img{
+    width:100%;
+ }
+
+ .story  div , .story .container div h3{
+    margin:2rem 0;
+ }
+
+ .story .container div h3,.Why-Bakery .container h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:var(--headColor);
+ }
+
+ .story .container div p, .Why-Bakery .container  p{
+    position: relative;
+    margin-bottom:2.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    color:var(--paragColor);
+ }
+
+ .story .container div .first::after{
+    content: "";
+    width:50px;
+    height: 1px;
+    background-color: var(--afterColor);
+    position: absolute;
+    bottom:-1.1rem;
+    left:0
+ }
+
+/* Story Section */
+
+/* Why Section */
+.Why-Bakery{
+    padding:4rem 0;
+    background-color: var(--BgColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Why-Bakery .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Why-Bakery .container i{
+    color:var(--IconColor);
+    font-size: 3rem;
+}
+
+.Why-Bakery .container  p {
+    margin-top: 1.5rem;
+}
+
+.Why-Bakery .container > div:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.Why-Bakery .container .Why-Caption{
+    display: flex;
+    flex-direction: column;
+}
+
+.Why-Bakery .container .reason  h4,.Offers .offer h3{
+     font-weight: 400;
+     color: var(--headColor);
+}
+
+
+/* Why Section */
+
+/* Testmonial Section  */
+
+.Testmonial{
+    padding:4rem 0;
+    background-color: var(--StaticBgColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Testmonial .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Testmonial .container .statistic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    padding:.2rem;
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.Testmonial .container .statistic p {
+    position: relative;
+    margin:3rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.Testmonial .container .statistic div {
+    margin-bottom: 3rem;
+}
+.Testmonial .container .statistic i {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+
+
+.Testmonial .container .statistic p::before{
+    content:"";
+    color:#fff;
+    position: absolute;
+    bottom:3rem;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+}
+
+.Testmonial .container .stat1 p::before{
+    content:"136";
+    animation-name: PageLikes;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.Testmonial .container .stat2 p::before{
+    content:"6";
+    animation-name: Location;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.Testmonial .container .stat3 p::before{
+    content:"220";
+    animation-name: Ideas;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.Testmonial .container .stat4 p::before{
+    content:"50";
+    animation-name: Comments;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes PageLikes {
+
+    0%{
+        content:"138"
+    }
+    10%{
+        content:"200"
+    }
+    20%{
+        content:"250"
+    }
+    30%{
+        content:"350"
+    }
+    40%{
+        content:"450"
+    }
+    50%{
+        content:"660"
+    }60%{
+        content:"703"
+    }70%{
+        content:"800"
+    }80%{
+        content:"945"
+    }
+    90%{
+        content:"1000"
+    }100%{
+        content:"1430"
+    }
+}
+@keyframes Location {
+
+    0%{
+        content:"6"
+    }
+    10%{
+        content:"17"
+    }
+    20%{
+        content:"19"
+    }
+    30%{
+        content:"22"
+    }
+    40%{
+        content:"32"
+    }
+    50%{
+        content:"39"
+    }60%{
+        content:"40"
+    }70%{
+        content:"42"
+    }80%{
+        content:"50"
+    }
+    90%{
+        content:"55"
+    }100%{
+        content:"64"
+    }
+}
+@keyframes Ideas {
+
+    0%{
+        content:"220"
+    }
+    10%{
+        content:"290"
+    }
+    20%{
+        content:"350"
+    }
+    30%{
+        content:"410"
+    }
+    40%{
+        content:"480"
+    }
+    50%{
+        content:"530"
+    }60%{
+        content:"696"
+    }70%{
+        content:"730"
+    }80%{
+        content:"810"
+    }
+    90%{
+        content:"845"
+    }100%{
+        content:"960"
+    }
+}
+@keyframes Comments {
+
+    0%{
+        content:"50"
+    }
+    10%{
+        content:"90"
+    }
+    20%{
+        content:"110"
+    }
+    30%{
+        content:"190"
+    }
+    40%{
+        content:"200"
+    }
+    50%{
+        content:"210"
+    }60%{
+        content:"290"
+    }70%{
+        content:"300"
+    }80%{
+        content:"340"
+    }
+    90%{
+        content:"380"
+    }100%{
+        content:"420"
+    }
+}
+/* Testmonial Section */
+
+/* Footer section */
+footer{
+    background-color: #413C39;
+    padding:4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container h4 {
+    font-size: 1.1rem;
+    color:#fff;
+    font-weight: 400;
+    margin:1.5rem 0 .5rem
+}
+
+footer .container p , .signature p{
+    color:#969696;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 2rem;  
+    padding:1rem 0;
+}
+
+footer .container .special p , footer .container .Opening-Hours p,footer .container .contacts > p{
+    border-bottom:1px solid #494743;
+    padding: .7rem 0;
+}
+
+footer .container .special p i ,footer .container .Opening-Hours p i,footer .container .contacts  i{
+    padding-right:.6rem;
+}
+
+footer .container .special .brdr,.container .Opening-Hours .brdr,.container .contacts .brdr{
+    border:none;
+}
+
+footer .container .contacts {
+    background-image: ;
+}
+
+footer .container .contacts > div{
+    padding:.5rem 0;
+    display: flex;
+    border-bottom:1px solid #494743;
+}
+footer .container .contacts > div p {
+    padding:0 0 .4rem;
+}
+footer .container .contacts > div i {
+    color:#969696;
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+.signature {
+    padding:4rem 0;
+    background-color: #353330;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signature div {
+    text-align: center;
+    width:50%;
+}
+
+.signature div img{
+    width:100%;
+}
+
+.signature  p {
+    margin:1rem 0;
+}
+
+.signature div a {
+    text-decoration: none;
+    background-color: #474541;
+    color:#8B8A86;
+    border-radius: 50%;
+    padding:.8rem 1rem;
+    margin-right: .5rem;
+}
+.signature div a:hover{
+    color:#fff;
+}
+.signature div .twitter:hover,.signature div .linkedin:hover{
+    background-color:#09c;
+}
+.signature div .fb:hover{
+    background-color:blue;
+}
+
+.signature div .google:hover{
+    background-color:#EA4336;
+}
+
+.arrow{
+    z-index:300;
+    background-color: #585454;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#9F968E;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top:90vh; 
+    right:30px;
+}
+
+/* Footer section */
+
+
+/* Offer Page */
+
+.Offers{
+    padding:3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Offers .offer {
+    margin-bottom:1.5rem;
+}
+
+.Offers .offer div{
+    padding:1rem 0;
+    border-bottom:1px solid rgba(204, 204, 204, 0.607);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.Offers .offer h3{
+    font-weight: 400;
+    color: var(--headColor);
+}
+
+.Offers .offer p {
+    font-weight: 400;
+    line-height: 2rem;
+    color:var(--paragColor);
+}
+.Offers .offer >p {
+    padding:1.2rem 0 0;
+    font-size: .9rem;
+}
+
+/* Offer Page  */
+
+
+/* Gallery Page */
+
+
+.Gallery{
+    padding:3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Gallery .Photo{
+    overflow: hidden;
+    position: relative;
+    margin:.5rem 0;
+}
+.Gallery .Photo div:first-of-type{
+    display: flex;
+    overflow: hidden;
+}
+.Gallery .Photo img {
+    width:100%;
+}
+
+.Gallery .Photo div:last-of-type {
+    background-color: rgba(0,0,0,.3);
+    color:#fff;
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    opacity:0
+}
+
+.Gallery .Photo:hover div:last-of-type {
+    opacity:1;
+}
+.Gallery .Photo:hover img{
+    transform: scale(1.1);
+}
+/* Gallery Page */
+
+/* Blog Page */
+.Blog-Caption {
+    padding:3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.Blog-Caption .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Blog-Caption .container img{
+    width:100%;
+}
+
+.Blog-Caption .container article{
+    border:1px solid #EEEFEF;
+    margin-bottom:1.5rem;
+}
+.Blog-Caption .container .article-Content{
+    padding:1rem;
+}
+.Blog-Caption .container .article-Content p {
+    font-weight: 400;
+      padding:1rem 0;
+      color:#686868;
+      line-height: 2rem;
+}
+.Blog-Caption .container .article-Content .author{
+    color:#A9AAAA;  
+    font-weight: 400;
+    padding:1rem 0 0;
+}
+
+
+.Blog-Caption .container a {
+   text-decoration: none;
+   color:#333233;
+}
+
+.Blog-Caption .container h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.Blog-Caption .container .more{
+    font-size: 1rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    color:#666;
+}
+
+.Blog-Caption .container .more i {
+    padding:0 .6rem;
+}
+
+.Blog-Caption .container .more a {
+    color:#666;
+}
+
+.Blog-Caption .container .more:hover,.Blog-Caption .container .more a:hover  {
+    color:var(--IconColor);
+}
+
+.Blog-Caption .container .Blog-Gallery .fig > div{
+    position: relative;
+}
+
+.Blog-Caption .container .Blog-Gallery .fig > div >div {
+    font-size:.7rem;
+    position: absolute;
+    bottom:.5rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+.Blog-Caption .container .Blog-Gallery .fig > div >div  i {
+    margin:.2rem;
+    color:#fffeff6d;
+}
+
+.Blog-Caption .container .Blog-Gallery .fig > div >div  i:first-of-type{
+    color:#fff;
+}
+
+.Blog-Caption .container .Quote .fig{
+    background-color: #8E7655;
+    padding:1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color:#fff;
+}
+
+.Blog-Caption .container .Quote .fig div{
+    padding:1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Blog-Caption .container .Quote .fig div p {
+    font-size: 1rem;
+}
+.Blog-Caption .container .Quote .fig div i{
+    color:#D2C9BB;
+    font-size: 1.625rem;
+}
+
+.Blog-Caption .container .Quote .fig div:hover{
+    background-color: #333;
+}
+
+.Blog-Caption .container .Quote .fig div:hover i {
+    color:#ADADAD;
+}
+.Blog-Caption .container .search {
+    align-self: stretch;
+    margin-top: 2rem;
+}
+.Blog-Caption .container .search *{
+     width: 100%;
+}
+.Blog-Caption .container .search i {
+    width: auto;
+}
+.Blog-Caption .container .search input{
+    padding:.8rem;
+    border:1px solid #E5E6E6;
+    margin-bottom:1.3rem;
+}
+.Blog-Caption .container .search input::placeholder{
+    font-size:1rem;
+    color:#A9AAAA;
+}
+
+.Blog-Caption .container .search > div {
+    padding:2rem 0;
+    border-top:.5px solid #E5E6E6;
+    border-bottom:.5px solid #E5E6E6;
+}
+
+.Blog-Caption .container .search > div:last-of-type{
+    border-bottom:none;
+}
+
+.Blog-Caption .container .search > div h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom:.5rem;
+}
+
+.Blog-Caption .container .search > div  > div p{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: .6rem;
+    padding:.6rem 0;
+    color:#ADACAD;
+}
+
+.Blog-Caption .container .search > div  > div p i {
+    padding-right:.4rem;
+}
+
+.Blog-Caption .container .search > div  > div p a {
+    font-size: .85rem;
+    color:#ADACAD;
+}
+/* Blog Page */
+
+/* Contact Page */
+
+.contact-Caption{
+    padding:3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-Caption .contact-Form div{
+    display: flex;
+    flex-direction: column;
+}
+.contact-Caption .contact-Form input ,.contact-Caption .contact-Form textarea {
+    width:100%;
+    padding:1rem;
+    margin-bottom:.5rem;
+    border:.5px solid rgb(200, 200, 200);
+}
+
+.contact-Caption .contact-Form input::placeholder ,.contact-Caption .contact-Form textarea::placeholder{
+  color:rgb(200, 200, 200);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-Caption .contact-Form button{
+    padding:.5rem 1rem; 
+    background-color: var(--IconColor);
+    color:#fff;
+    border:none;
+    border-radius:.2rem;
+}
+
+.contact-Caption .contact-Form button:hover{
+    background-color: var(--headColor);
+}
+.contact-Caption h3{
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+.contact-Caption p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding:.6rem 0;
+    color:#adacad;
+}
+
+ .contact-Information div {
+    display: flex;
+    align-items: center;
+    margin-bottom:.5rem;
+}
+
+ .contact-Information div i {
+    padding:.5rem;
+    border-radius: 50%;
+    background-color: var(--IconColor);
+    color:#fff;
+    margin-right:1rem;
+}
+
+.map iframe{
+    width: 100%;
+}
+/* contact Page */
+
+@media screen and (min-width:600px)  {
+    .container{
+        width:85%
+    }
+
+    /* Nav Section */
+    nav div:first-of-type {
+        width:28%;
+    }
+    /* Nav Section */
+
+    
+}
+
+@media screen and (min-width:768px)  {
+
+    /* Nav Section */
+    nav div:first-of-type {
+        width:25%;
+    }
+    /* Nav Section */
+
+    /* Home Who Section */
+ .Who .container,.Location .container,.contactSection .container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .Who .container >div,.Location .container div{
+    width:47%;
+ }
+
+ .contactSection .container div:first-of-type{
+    width:75%;
+ }
+ 
+ .Desserts{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 0;
+ }
+ .Dessert{
+    width:32.5%;
+ }
+
+/* Home Who Section */
+
+    /* Story Section */
+     
+    .story .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     
+     .story .container div{
+        width:47%
+
+     }
+     .story  div , .story .container div h3{
+        margin:1rem 0;
+     }
+      
+    /* Story Section */
+
+    /* Why Section */
+    
+    .Why-Bakery .container .Why-Caption{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    .Why-Bakery .container .reason {
+        width:calc(100%/3);
+        padding:1rem;
+    }
+    /* Why Section */
+
+    /* Testmonial Section */
+
+    .Testmonial .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .Testmonial .container .statistic{
+        width:40%;
+    }
+
+    /* Testmonial Section */
+
+    /* Footer Section */
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer .container >div {
+        width:45%;
+    }
+
+    /* Footer Section */
+
+  /* signature Section */
+    .signature div {
+        text-align: center;
+        width:25%;
+    }
+
+/* signature Section */
+
+/* offers Page */
+    .Offers .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+
+    .Offers .offer {
+        margin-bottom:0;
+        padding:1rem;
+        width:calc(100%/3)
+    }
+/* offers Page */
+
+
+/* Gallery Page */
+.Gallery .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.Gallery .Photo {
+    margin-bottom: .2rem;
+    width:49%;
+}
+/* Gallery Page */
+
+/* Blog Page */
+
+.Blog-Banner .container > div {
+    padding:2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Blog-Banner p {
+    padding:3rem 0 0.5rem;
+}
+.Blog-Banner p ,.Blog-Banner h2{
+    margin-top:1.5rem;
+}
+/* Blog Page */
+
+
+/* Contact Page */
+
+
+
+.contact-Caption .container {
+   display: flex;
+   justify-content: space-between;
+}
+.contact-Caption .container >div:first-of-type{
+    width:60%;
+}
+.contact-Caption .container >div:last-of-type{
+    width:30%;
+}
+.contact-Caption .contact-Form div{
+ 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.contact-Caption .contact-Form div input{
+    width:49%;
+    margin-bottom:.5rem;
+}
+
+/* Contact Page */
+
+
+}
+
+@media screen and (min-width:992px)  {
+
+  
+    
+    /* Nav Section */
+
+    nav div:first-of-type{
+        width:20%;
+    }
+
+    nav div:last-of-type{
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding:1rem;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color:#8A8B8B;
+    }
+
+    nav ul li a:hover{
+        color:#111;
+    }
+    /* Nav Section */
+
+
+    .contactSection .container div{
+        width:47%;
+     }
+     .contactSection .container >div:first-of-type{
+        padding:0 3rem;
+     }
+   /* Testmonial Section */
+
+   .Testmonial .container .statistic{
+    width:calc(100%/4);
+}
+   /* Tesmonial Section */
+
+   /* Footer Section */
+   footer .container >div {
+    padding:1rem;
+    width:calc(100%/4);
+}
+/* Footer Section */
+
+
+/*Blog Page*/
+
+.Blog-Caption .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Blog-Caption .container .articles{
+    width:70%;
+    padding:1rem 2rem 0 0;
+}
+
+.Blog-Caption .container .search{
+    width:30%;
+    padding:1rem;
+    margin-top:0;
+}
+
+
+.Blog-Caption .container article{
+    border:1px solid #EEEFEF;
+    margin-bottom:1.5rem;
+}
+/*Blog Page*/
+}
+@media screen and (min-width:1200px){
+
+    .container{
+        width:80%
+    }
+
+    /* Nav Section */
+    nav div:first-of-type{
+        width:15%;
+    }
+   /* Nav Section */
+
+   /* Banner Section */
+   
+   .banner,.Offer-Banner,.Gallery-Banner{
+    height: 35vh;
+}
+   /* Banner Section */
+
+   /* aside Section */
+aside{
+    top:22%;
+}
+   /* aside Section */
+   footer .container >div {
+    width:24%;
+}
+   /* Gallery Page */
+.Gallery .Photo {
+    width:33.1%;
+}
+/* Gallery Page */
+
+
+/* Blog Page */
+
+.Blog-Caption .container .articles{
+    width:70%;
+    padding:1rem 2rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.Blog-Caption .container .search{
+    width:30%;
+    padding:1rem;
+    margin-top:0;
+}
+
+
+.Blog-Caption .container article{
+    width:49%;
+    margin:0 1% 1rem 0;
+}
+
+.Blog-Caption .container article:nth-of-type(2),.Blog-Caption .container article:nth-of-type(4){
+    margin:0 0 1rem 1%;
+}
+
+.Blog-Caption .container .articles .Basic {
+    position: relative;
+    bottom:2.2rem;
+    left:0;
+}
+  
+/* Blog Page */
+}

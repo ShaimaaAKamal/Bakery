@@ -1,0 +1,16 @@
+@media screen and (min-width:1200px){
+
+    .Blog-Caption .container article{
+        width:100%;
+        margin:0 0 1rem;
+    }
+
+    .Blog-Caption .container article:nth-of-type(2),.Blog-Caption .container article:nth-of-type(4){
+        margin:0 0 1rem;
+    }
+
+    .Blog-Caption .container .articles .Basic {
+        position: static;
+       
+    }
+}

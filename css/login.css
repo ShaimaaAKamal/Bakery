@@ -1,0 +1,116 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F1F1;
+
+}
+
+.Login,.Forget{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login >div , .Forget >div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.Login h1 , .Forget h1 {
+    padding:1.5rem;
+    border:5px solid #333;
+    border-radius: 50%;
+    width:20%;
+    margin:1rem;
+}
+
+
+
+.Login h1 img ,.Forget h1 img {
+    width:100%;
+}
+
+.Forget >div{
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+    background-color: #fff;
+    padding:2rem;
+    width:50%;
+}
+
+form >div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1rem;
+    font-size:.8rem;
+    color:#72777B;
+}
+
+form >div >div{
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+}
+.Forget >div >div:first-of-type{
+    line-height: 1.2rem;
+    font-weight: 400;
+    font-size: .9rem;
+    width:50%;
+   background-color: #fff;
+   margin:1rem;
+   border-left:2px solid #01A0D2;
+   padding:.5rem;
+}
+form >div >div input {
+    margin-right: .5rem;
+}
+
+form button {
+    padding:.5rem 1rem;
+    color:white;
+    background-color: #0285BA;
+    border:none;
+    border-radius: .3rem;
+}
+
+form >div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Login >div >div, .Forget >div >div{
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.Login >div >div a ,.Forget >div >div a{
+    margin-bottom:1rem;
+    color:#636972;
+    text-decoration: none;
+}
+
+.Login >div >div i ,.Forget >div >div i{
+   padding-right:.5rem;
+}
+
+
+form input{
+    margin-top:.3rem;
+    padding:.4rem;
+    border:1px solid #DDD;
+} 
